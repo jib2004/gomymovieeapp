@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gomymovieeapp/static/css/main.eb553472.css",
+    "main.js": "/gomymovieeapp/static/js/main.f976f6ba.js",
+    "static/js/787.d3befce1.chunk.js": "/gomymovieeapp/static/js/787.d3befce1.chunk.js",
+    "index.html": "/gomymovieeapp/index.html",
+    "main.eb553472.css.map": "/gomymovieeapp/static/css/main.eb553472.css.map",
+    "main.f976f6ba.js.map": "/gomymovieeapp/static/js/main.f976f6ba.js.map",
+    "787.d3befce1.chunk.js.map": "/gomymovieeapp/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb553472.css",
+    "static/js/main.f976f6ba.js"
+  ]
+}
