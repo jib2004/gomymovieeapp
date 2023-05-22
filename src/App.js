@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Movies from './pages/Movies';
+import Fetch from './components/Fetch';
 
 const MovieCard = ({ movie }) => {
   return (
@@ -85,10 +87,16 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1 className="app-title">Movie List</h1>
+      {/* <h1 className="app-title">Movie List</h1>
       <Filter onFilter={handleFilter} />
       <MovieList movies={movies} />
       <button className="add-movie-btn" onClick={handleAddMovie}>Add Movie</button>
+
+
+
+      <Movies /> */}
+
+      <Fetch />
     </div>
   );
 };
