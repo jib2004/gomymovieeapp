@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import Movies from './pages/Movies';
-import Fetch from './components/Fetch';
+import React, { useState,useEffect } from 'react';
+// import Movies from './pages/Movies';
+// import Fetch from './components/Fetch';
+import axios from 'axios'
 
 const MovieCard = ({ movie }) => {
   return (
@@ -85,6 +86,27 @@ const App = () => {
     setMovies([...movies, newMovie]);
   };
 
+  const Fetch = () => {
+    const [data, setData] = useState([])
+      useEffect(()=>{
+        axios.get('https://jsonplaceholder.typicode.com/users').then((res)=>{
+          console.log(res.data)
+        })
+      },[data])
+    return (
+      <div>
+        <h1>User List</h1>
+  
+        {data.map((user) =>(
+          <ul key={user.id}>
+            <li>{user.name}</li>
+          </ul>
+        ))}
+      </div>
+      
+    )
+  }
+  
   return (
     <div className="app">
       {/* <h1 className="app-title">Movie List</h1>
